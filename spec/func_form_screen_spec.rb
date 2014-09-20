@@ -21,6 +21,10 @@ describe "ProMotion::TestFormScreen functionality" do
     views(UITextField).length.should == 2
   end
 
+  it "contains an image input" do
+    view("Profile Image").should.not.be.nil
+  end
+
   it "contains a section title" do
     view("ACCOUNT INFORMATION").should.not.be.nil
   end
@@ -29,5 +33,4 @@ describe "ProMotion::TestFormScreen functionality" do
     view("Email").should.not.be.nil
     view("Password").should.not.be.nil
   end
-
 end

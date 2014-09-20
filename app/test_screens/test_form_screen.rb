@@ -15,6 +15,10 @@ class TestFormScreen < PM::FormScreen
         title: "Password",
         type: :password,
         value: ""
+      }, {
+        name: "profile_image",
+        title: "Profile Image",
+        type: :image
       }]
     }]
   end
